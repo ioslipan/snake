@@ -1,0 +1,19 @@
+platform:ios, '7.0'
+target '贪吃蛇' do
+pod 'ReactiveCocoa', '~> 2.5'
+pod 'BlocksKit', '~> 2.2.5'
+pod 'MJExtension', '~> 3.0.10'
+pod 'SystemServices', '~> 1.0.2'
+pod 'SSKeychain'
+pod 'iOS-Echarts'
+pod 'OpenSSL', '~> 1.0.204'
+
+pod 'Masonry', '~> 0.6.4'
+pod 'SVProgressHUD', '~> 1.1.3'
+pod 'TTTAttributedLabel', '~> 1.13.4'
+pod 'WebViewJavascriptBridge', '~> 5.0.5'
+
+pod 'hpple', '~> 0.2.0'
+
+end
+

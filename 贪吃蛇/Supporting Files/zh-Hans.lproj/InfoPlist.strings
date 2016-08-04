@@ -1,0 +1,8 @@
+/* 
+  InfoPlist.strings
+  贪吃蛇
+
+  Created by mickey on 16/8/4.
+  Copyright © 2016年 Mickey. All rights reserved.
+*/
+CFBundleDisplayName = "贪吃蛇";

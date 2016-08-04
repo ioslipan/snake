@@ -1,0 +1,15 @@
+
+/* Class = "UILabel"; text = "0"; ObjectID = "1vl-oc-LTz"; */
+"1vl-oc-LTz.text" = "0";
+
+/* Class = "UIButton"; normalTitle = "停止"; ObjectID = "Jx9-HY-RHq"; */
+"Jx9-HY-RHq.normalTitle" = "停止";
+
+/* Class = "UIButton"; normalTitle = "排行榜"; ObjectID = "RsL-5x-bGu"; */
+"RsL-5x-bGu.normalTitle" = "排行榜";
+
+/* Class = "UIButton"; normalTitle = "Start"; ObjectID = "qbd-Hi-ucN"; */
+"qbd-Hi-ucN.normalTitle" = "Start";
+
+/* Class = "UILabel"; text = "分数:"; ObjectID = "zOL-Yz-O6I"; */
+"zOL-Yz-O6I.text" = "分数:";
