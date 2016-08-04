@@ -281,6 +281,9 @@
   y                                  = arc4random_uniform(self.playGround.bounds.size.height - snakeSize - 1);
     }
 
+    
+    
+    
   UIView *head                       = [[UIView alloc]initWithFrame:CGRectMake(x, y, snakeSize, snakeSize)];
   head.backgroundColor               = [UIColor colorWithRed:0.9376 green:0.9319 blue:0.9618 alpha:1.0];
     [self.playGround addSubview:head];
