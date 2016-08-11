@@ -19,6 +19,9 @@
 		D4657D591D52F4B500959821 /* MIMainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4657D581D52F4B500959821 /* MIMainViewController.m */; };
 		D4657D5C1D52F62400959821 /* MIStartViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D4657D5B1D52F62400959821 /* MIStartViewController.m */; };
 		D4657D611D531D4C00959821 /* UINavigationController+FDFullscreenPopGesture.m in Sources */ = {isa = PBXBuildFile; fileRef = D4657D601D531D4C00959821 /* UINavigationController+FDFullscreenPopGesture.m */; };
+		D4ADF8361D5499D900C5E1F6 /* TMCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ADF8311D5499D900C5E1F6 /* TMCache.m */; };
+		D4ADF8371D5499D900C5E1F6 /* TMDiskCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ADF8331D5499D900C5E1F6 /* TMDiskCache.m */; };
+		D4ADF8381D5499D900C5E1F6 /* TMMemoryCache.m in Sources */ = {isa = PBXBuildFile; fileRef = D4ADF8351D5499D900C5E1F6 /* TMMemoryCache.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -47,6 +50,12 @@
 		D4657D5B1D52F62400959821 /* MIStartViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MIStartViewController.m; sourceTree = "<group>"; };
 		D4657D5F1D531D4C00959821 /* UINavigationController+FDFullscreenPopGesture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UINavigationController+FDFullscreenPopGesture.h"; sourceTree = "<group>"; };
 		D4657D601D531D4C00959821 /* UINavigationController+FDFullscreenPopGesture.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UINavigationController+FDFullscreenPopGesture.m"; sourceTree = "<group>"; };
+		D4ADF8301D5499D900C5E1F6 /* TMCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMCache.h; sourceTree = "<group>"; };
+		D4ADF8311D5499D900C5E1F6 /* TMCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMCache.m; sourceTree = "<group>"; };
+		D4ADF8321D5499D900C5E1F6 /* TMDiskCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMDiskCache.h; sourceTree = "<group>"; };
+		D4ADF8331D5499D900C5E1F6 /* TMDiskCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMDiskCache.m; sourceTree = "<group>"; };
+		D4ADF8341D5499D900C5E1F6 /* TMMemoryCache.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TMMemoryCache.h; sourceTree = "<group>"; };
+		D4ADF8351D5499D900C5E1F6 /* TMMemoryCache.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TMMemoryCache.m; sourceTree = "<group>"; };
 		FDAFE0480AB139B286288C1F /* Pods-贪吃蛇.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-贪吃蛇.release.xcconfig"; path = "Pods/Target Support Files/Pods-贪吃蛇/Pods-贪吃蛇.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -190,6 +199,7 @@
 		D4657D5D1D531D3F00959821 /* Vender */ = {
 			isa = PBXGroup;
 			children = (
+				D4ADF82F1D5499D900C5E1F6 /* TMCache */,
 				D4657D5E1D531D4C00959821 /* FDFullscreenPopGesture */,
 			);
 			path = Vender;
@@ -202,6 +212,19 @@
 				D4657D601D531D4C00959821 /* UINavigationController+FDFullscreenPopGesture.m */,
 			);
 			path = FDFullscreenPopGesture;
+			sourceTree = "<group>";
+		};
+		D4ADF82F1D5499D900C5E1F6 /* TMCache */ = {
+			isa = PBXGroup;
+			children = (
+				D4ADF8301D5499D900C5E1F6 /* TMCache.h */,
+				D4ADF8311D5499D900C5E1F6 /* TMCache.m */,
+				D4ADF8321D5499D900C5E1F6 /* TMDiskCache.h */,
+				D4ADF8331D5499D900C5E1F6 /* TMDiskCache.m */,
+				D4ADF8341D5499D900C5E1F6 /* TMMemoryCache.h */,
+				D4ADF8351D5499D900C5E1F6 /* TMMemoryCache.m */,
+			);
+			path = TMCache;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -330,9 +353,12 @@
 			files = (
 				D4657D4D1D52F15100959821 /* MIPlayer.m in Sources */,
 				D4657D561D52F42600959821 /* MIBaseViewController.m in Sources */,
+				D4ADF8371D5499D900C5E1F6 /* TMDiskCache.m in Sources */,
 				D4657D611D531D4C00959821 /* UINavigationController+FDFullscreenPopGesture.m in Sources */,
 				D4657D591D52F4B500959821 /* MIMainViewController.m in Sources */,
+				D4ADF8361D5499D900C5E1F6 /* TMCache.m in Sources */,
 				4CF27FFD1C1152D900AD3BC3 /* AppDelegate.m in Sources */,
+				D4ADF8381D5499D900C5E1F6 /* TMMemoryCache.m in Sources */,
 				D4657D5C1D52F62400959821 /* MIStartViewController.m in Sources */,
 				4CF27FFA1C1152D900AD3BC3 /* main.m in Sources */,
 				D4657D381D52F07700959821 /* MITopTableViewController.m in Sources */,
@@ -453,8 +479,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "/Users/me865/Downloads/贪吃蛇/贪吃蛇/APP/PrefixHeader.pch";
-				INFOPLIST_FILE = "/Users/me865/Downloads/贪吃蛇/贪吃蛇/Supporting Files/Info.plist";
+				GCC_PREFIX_HEADER = "/Users/me865/Desktop/新技能/贪吃蛇/snake/贪吃蛇/APP/PrefixHeader.pch";
+				INFOPLIST_FILE = "/Users/me865/Desktop/新技能/贪吃蛇/snake/贪吃蛇/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmbbox.;
@@ -470,8 +496,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = NO;
-				GCC_PREFIX_HEADER = "/Users/me865/Downloads/贪吃蛇/贪吃蛇/APP/PrefixHeader.pch";
-				INFOPLIST_FILE = "/Users/me865/Downloads/贪吃蛇/贪吃蛇/Supporting Files/Info.plist";
+				GCC_PREFIX_HEADER = "/Users/me865/Desktop/新技能/贪吃蛇/snake/贪吃蛇/APP/PrefixHeader.pch";
+				INFOPLIST_FILE = "/Users/me865/Desktop/新技能/贪吃蛇/snake/贪吃蛇/Supporting Files/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.rmbbox.;

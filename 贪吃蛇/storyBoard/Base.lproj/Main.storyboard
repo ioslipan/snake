@@ -242,18 +242,7 @@
                             </view>
                             <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="cqd-7f-cJC">
                                 <rect key="frame" x="0.0" y="37" width="375" height="500"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="redraw" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="boardImage" translatesAutoresizingMaskIntoConstraints="NO" id="1dA-aX-OZv">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="500"/>
-                                    </imageView>
-                                </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                                <constraints>
-                                    <constraint firstItem="1dA-aX-OZv" firstAttribute="leading" secondItem="cqd-7f-cJC" secondAttribute="leading" id="Ggl-9i-GC4"/>
-                                    <constraint firstAttribute="trailing" secondItem="1dA-aX-OZv" secondAttribute="trailing" id="ZCV-8z-PYO"/>
-                                    <constraint firstAttribute="bottom" secondItem="1dA-aX-OZv" secondAttribute="bottom" id="kyw-q1-dJD"/>
-                                    <constraint firstItem="1dA-aX-OZv" firstAttribute="top" secondItem="cqd-7f-cJC" secondAttribute="top" id="lcF-v1-tCA"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
@@ -310,7 +299,6 @@
     </scenes>
     <resources>
         <image name="backgroundimage" width="333" height="500"/>
-        <image name="boardImage" width="192" height="300"/>
         <image name="down_default" width="66" height="66"/>
         <image name="left_default" width="66" height="66"/>
         <image name="main" width="265" height="332"/>

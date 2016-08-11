@@ -6,8 +6,9 @@
 //  Copyright © 2016年 mickey. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "MIBaseViewController.h"
 
 @interface MIMainViewController : MIBaseViewController
 @property (assign, nonatomic) CGFloat timeInterval;
+@property (copy,nonatomic)NSString * level;
 @end

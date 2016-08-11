@@ -16,9 +16,12 @@
 #define OMG   .05
 #define Fuck   .01
 
-@interface MIStartViewController ()<UIPickerViewDataSource, UIPickerViewDelegate>
+@interface MIStartViewController ()<UIPickerViewDataSource, UIPickerViewDelegate>{
+  NSString * _level;
+}
 @property (weak, nonatomic) IBOutlet UIPickerView *difficultSlect;
 @property (assign, nonatomic) CGFloat dif;
+
 
 @end
 
@@ -48,12 +51,13 @@
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-  if (row == 0) self.dif = Easy;
-  else if (row == 1) self.dif = Middle;
-  else if (row == 2) self.dif = Hard;
-  else if (row == 3) self.dif = Crazy;
-  else if (row == 4) self.dif = OMG;
-  else self.dif = Fuck;
+  if (row == 0) {self.dif = Easy;
+    _level = @"Easy";}
+  else if (row == 1) {self.dif = Middle;_level = @"Middle";}
+  else if (row == 2) {self.dif = Hard;_level = @"Hard";}
+  else if (row == 3) {self.dif = Crazy;_level = @"Crazy";}
+  else if (row == 4) {self.dif = OMG;_level = @"OMG";}
+  else {self.dif = Fuck;_level = @"Fuck";}
 }
 
 - (IBAction)startClick:(id)sender {
@@ -66,6 +70,22 @@
   self.difficultSlect.delegate = self;
   self.difficultSlect.dataSource = self;
     self.fd_prefersNavigationBarHidden = YES;
+  NSString * str = @"Xu Tian Gang Yi";
+  NSLog(@"%@", [str substringToIndex:2]);
+  NSLog(@"%@", [[str substringFromIndex:3] substringToIndex:4]);
+  NSLog(@"%@", [[str substringFromIndex:8] substringToIndex:4]);
+  NSLog(@"%@", [[str substringFromIndex:13] substringToIndex:2]);
+  
+//  (2).substringWithRange：按区间截取字符串中得内容的
+  NSLog(@"%@", [str substringWithRange:[str rangeOfString:@"Xu"]]);
+  NSLog(@"%@", [str substringWithRange:[str rangeOfString:@"Tian"]]);
+  NSLog(@"%@", [str substringWithRange:[str rangeOfString:@"Gang"]]);
+  NSLog(@"%@", [str substringWithRange:[str rangeOfString:@"Yi"]]);
+  
+//  (3).NSMakeRange(x, y)：从下标x 截取到下标y
+//  NSLog(@“%@“, [str substringWithRange:NSMakeRange(0, 2)]);
+
+
   // Do any additional setup after loading the view.
 }
 
@@ -96,9 +116,12 @@
 //    [vc.view.layer addAnimation:transition forKey:nil];
 
     vc.timeInterval = self.dif;
+    vc.level = _level;
+ 
   }
   
 }
+
 
 
 
